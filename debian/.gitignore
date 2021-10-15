@@ -1,0 +1,6 @@
+*.log
+*.substvars
+/.debhelper
+/zimbra-launcher
+/files
+/changelog

@@ -11,6 +11,8 @@ BUILD_ROOT := $(shell pwd)
 
 all: $(BUILD) $(BUILD)/zmmailboxdmgr $(BUILD)/zmmailboxdmgr.unrestricted
 
+include build.mk
+
 $(BUILD):
 	mkdir $(BUILD)
 
@@ -59,3 +61,6 @@ clean:
 
 FORCE: ;
 
+install: all
+	$(call install_libexec, build/zmmailboxdmgr)
+	$(call install_libexec, build/zmmailboxdmgr.unrestricted)
