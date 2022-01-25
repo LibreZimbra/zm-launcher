@@ -768,7 +768,7 @@ main(int argc, char *argv[])
 	    progname = "mailboxdmgr";
 	}
     }
-    openlog(progname, LOG_PID, LOG_MAIL);
+    openlog(progname, LOG_PID | LOG_PERROR, LOG_MAIL);
 
     StripEnv();
 
