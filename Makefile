@@ -16,7 +16,7 @@ include build.mk
 $(BUILD):
 	mkdir $(BUILD)
 
-JAVA_BINARY ?= /opt/zimbra/common/bin/java
+JAVA_BINARY ?= /usr/bin/java
 MAILBOXD_MANAGER_PIDFILE ?= /opt/zimbra/log/zmmailboxd_manager.pid
 MAILBOXD_MANAGER_DEPRECATED_PIDFILE ?= /opt/zimbra/log/zmmailboxd.pid
 MAILBOXD_JAVA_PIDFILE ?= /opt/zimbra/log/zmmailboxd_java.pid
